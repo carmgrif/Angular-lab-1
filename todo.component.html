@@ -1,0 +1,14 @@
+<div class='todo-container'>
+    <h1>TODO List</h1>
+    <p>ToDo List:</p>
+    <input type='text' placeholder='Filter your todos'/>
+    <ol>
+        <li *ngFor='let todo of todos; index as i'>
+            <p>{{ i + 1 }}. </p>
+            <button *ngIf = '!todo.completed' class = 'complete-button'>Complete</button>
+            <p [ngClass] = '{strike: todo.completed}'> {{ todo.task }} </p>
+            <button class = 'delete-button'>X</button>
+
+        </li>
+    </ol>
+</div>

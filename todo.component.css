@@ -1,0 +1,46 @@
+
+/* ● “x” buttons, “complete” buttons, the two inputs, and the “Add” button are all
+non-functional for now. Add them to the HTML and style them. We will make them work
+in the next lab. */ */
+
+body{
+    background-color: linear-gradient(to right, #f857a6, #ff5858);
+}
+
+.todo-container{
+    width: 70%;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+ol{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+li {
+    width: 100%;
+    border: 1px solid green;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    gap: 5px;
+}
+
+li .delete-button{
+    position: absolute;
+    right: 5px;
+}
+
+.strike{
+    text-decoration: line-through;
+}
